@@ -2,11 +2,34 @@
 <html>
   <head>
     <title>CP5310 NodeJS Express and Handlebars</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   </head>
   <body>
   <header>
     <img src="/img/handlebars.png" alt="CP5310 NodeJS and Handlebar">
   </header>
   {{{body}}}
+<hr>
+ 
+<h1 id="title"></h1>
+<hr>
+<div id="text"></div>
+
 </body>
+
+
+
+<script id="list-template" type="text/x-handlebars-template">
+    <h2>{{title-main}}</h2>
+    <h3>{{description}}</h3>
+    <ul>
+    {{#each articles}}
+        <li><a href="{{url}}">{{title}}</a></li>
+    {{/each}}
+    </ul>
+
+  </script>
+<script src="/js/ajax.js"></script>
 </html>
