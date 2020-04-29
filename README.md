@@ -19,3 +19,4 @@ npm install express-handlebars
 
 After the views are created, use node-server_03.js to test the views
 
+take a look at [handlebars](https://handlebarsjs.com/) for more information.
